@@ -32,6 +32,26 @@ type Executer interface {
 	Ping(ctx context.Context) *redis.StatusCmd
 }
 
+func TryLock(executer Executer, key string, px int) (uint64, bool) {
+	if px <= 0 {
+		px = defaultLockExpire
+	}
+
+	lockId := uuid.Next()
+	resp, err := executer.Eval(context.Background(), lockCommand, []string{key}, []string{strconv.FormatUint(lockId, 10), strconv.Itoa(px + defaultLockExpire)}).Result()
+	if err == redis.Nil || resp == nil {
+		return 0, false
+	}
+	if err != nil {
+		return 0, false
+	}
+	reply := resp.(string)
+	if reply == "OK" {
+		return lockId, true
+	}
+	return 0, false
+}
+
 // Lock 阻塞式的获取锁
 // key 用作分布式锁的键名称
 // px锁的有效期，单位毫秒，超过此时间锁自动释放
