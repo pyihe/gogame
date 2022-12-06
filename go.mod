@@ -20,6 +20,7 @@ require (
 	github.com/go-redis/redis/v9 v9.0.0-rc.2 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/pyihe/go-pkg v0.0.0-20220911080534-fee35d4a7811 // indirect
+	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	go.etcd.io/etcd/api/v3 v3.5.6 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.6 // indirect

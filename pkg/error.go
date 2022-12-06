@@ -18,4 +18,6 @@ var (
 	ErrConnClosed               = errors.New("closed connection")
 	ErrNilNewAgent              = errors.New("NewAgent required")
 	ErrTimerClosed              = errors.New("timer closed")
+	ErrInvalidCronExpr          = errors.New("invalid cron expr")
+	ErrTaskCronClosed           = errors.New("task cron closed")
 )

@@ -187,6 +187,7 @@ github.com/pyihe/go-pkg v0.0.0-20220911080534-fee35d4a7811 h1:lJS5vqRaLLuFBybtG4
 github.com/pyihe/go-pkg v0.0.0-20220911080534-fee35d4a7811/go.mod h1:vtM3H11Xsj8a4d0O9+6e1PrM17+YCC7elT1NFNdIk1U=
 github.com/pyihe/timer v0.0.0-20221123135445-db4746c46449 h1:pFnLZsdI9VGG4lWnYYIYqiovyt3UmQ8tgjOZni1mSCQ=
 github.com/pyihe/timer v0.0.0-20221123135445-db4746c46449/go.mod h1:3k4NLQbd/sVJx0K+VjvROwBLvVkK/26Idih2KBfkF78=
+github.com/robfig/cron/v3 v3.0.1 h1:WdRxkvbJztn8LMz/QEvLN5sBU+xKpSqwwUO1Pjr4qDs=
 github.com/robfig/cron/v3 v3.0.1/go.mod h1:eQICP3HwyT7UooqI/z+Ov+PtYAWygg1TEWWzGIFLtro=
 github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6LYCDYWNEvQ=
 github.com/rogpeppe/go-internal v1.6.1/go.mod h1:xXDCJY+GAPziupqXw64V24skbSoqbTEfhy4qGm1nDQc=
